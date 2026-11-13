@@ -1,0 +1,36 @@
+/* terms and refund pages: same tokens as the home page */
+:root {
+  --black: #000;
+  --fg: #f4f4f1;
+  --dim: #9a9b97;
+  --soft: #c8c9c5;
+  --rule: rgba(244, 244, 241, .16);
+  --accent: #ff9902;
+  --sans: "Instrument Sans", system-ui, sans-serif;
+  --pad: clamp(16px, 5vw, 64px);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0 var(--pad); background: var(--black); color: var(--soft); font: 400 16px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+header, footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+header { height: 72px; border-bottom: 1px solid var(--rule); }
+.wm { font: 600 18px/1 var(--sans); letter-spacing: -.02em; color: var(--fg); text-decoration: none; }
+main { max-width: 720px; padding: 64px 0 96px; }
+h1 { margin: 0 0 8px; font: 400 clamp(36px, 6vw, 56px)/1.1 var(--sans); letter-spacing: -.03em; color: var(--fg); }
+h2 { margin: 48px 0 12px; font: 500 22px/1.25 var(--sans); letter-spacing: -.01em; color: var(--fg); }
+.meta { margin: 0 0 32px; font-size: 14px; color: var(--dim); }
+p, ul { margin: 0 0 16px; }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+strong { color: var(--fg); font-weight: 600; }
+a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 0 0 16px; }
+th, td { padding: 12px 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+th { width: 34%; padding-right: 16px; color: var(--fg); font-weight: 600; }
+@media (max-width: 560px) { th, td { display: block; width: auto; } th { padding-bottom: 0; border: 0; } }
+footer { flex-wrap: wrap; min-height: 72px; padding: 14px 0; border-top: 1px solid var(--rule); font-size: 12px; color: var(--dim); }
+footer nav { display: flex; flex-wrap: wrap; gap: 0 24px; }
+footer a { display: inline-flex; align-items: center; min-height: 44px; color: var(--fg); text-decoration: none; }
+footer a:hover { color: var(--accent); }
