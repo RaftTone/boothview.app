@@ -18,6 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/legal.css">
+<script src="/consent.js"></script>
 <!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5FZZG85G"></script>
 <script>
@@ -36,12 +37,10 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+fbq('consent', window.bvConsentGranted ? 'grant' : 'revoke');
 fbq('init', '1672714070912982');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1672714070912982&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
 </head>
 <body>
@@ -117,7 +116,7 @@ src="https://www.facebook.com/tr?id=1672714070912982&ev=PageView&noscript=1"
 </main>
 <footer>
   <span>© 2026 Boothview</span>
-  <nav aria-label="Footer"><a href="/terms/" aria-current="page">Terms of Sale</a><a href="/refund/">Refund Policy</a><a href="https://instagram.com/boothviewapp" rel="me noopener" target="_blank">Instagram</a></nav>
+  <nav aria-label="Footer"><a href="/terms/" aria-current="page">Terms of Sale</a><a href="/refund/">Refund Policy</a><a href="https://instagram.com/boothviewapp" rel="me noopener" target="_blank">Instagram</a><a href="#cookies" onclick="bvCookieSettings();return false">Cookies</a></nav>
 </footer>
 </body>
 </html>
