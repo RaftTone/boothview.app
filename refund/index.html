@@ -18,6 +18,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/legal.css">
+<script src="/consent.js"></script>
+<!-- Google tag -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5FZZG85G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<!-- End Google tag -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('consent', window.bvConsentGranted ? 'grant' : 'revoke');
+fbq('init', '1672714070912982');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 <header><a class="wm" href="/">Boothview</a></header>
@@ -70,7 +94,7 @@
 </main>
 <footer>
   <span>© 2026 Boothview</span>
-  <nav aria-label="Footer"><a href="/terms/">Terms of Sale</a><a href="/refund/" aria-current="page">Refund Policy</a><a href="https://instagram.com/boothviewapp" rel="me noopener" target="_blank">Instagram</a></nav>
+  <nav aria-label="Footer"><a href="/terms/">Terms of Sale</a><a href="/refund/" aria-current="page">Refund Policy</a><a href="https://instagram.com/boothviewapp" rel="me noopener" target="_blank">Instagram</a><a href="#cookies" onclick="bvCookieSettings();return false">Cookies</a></nav>
 </footer>
 </body>
 </html>
